@@ -41,27 +41,7 @@ class MainActivity : AppCompatActivity() {
     fun checkQuizCount(){
 
     }
-
+// 次回やること
+//    Koin、Roomインストール
+//    Koinの仕様理解＋ディレクトリ構造
 }
-
-// https://codeforfun.jp/android-studio-quiz-game-with-kotlin-4/
-// とりあえず構造を真似する
-// ダメそうなので一から考える
-// 軽い設計
-// DBからランダムに10問文のデータ取得⇒4つの中から正解を作成（正解flgをつける）⇒画面に1問目表示⇒成否判定画面（出来ればカードURL）⇒次の問題⇒ラスト終わったら正解数画面⇒トップページへ
-
-//　必要メソッド
-//DBアクセスメソッド
-//問題作成メソッド（出題回数インサート、DTO作成、リストで持つ）
-//画面へセットするメソッド
-//成否判定表示メソッド同時に正解数加算（問題を押したとき）
-//最後の問題か判定するメソッド（成否表をとじたとき）
-//次の問題を取り出すメソッド（上の次）
-
-
-
-
-
-
-//https://developer.android.com/training/data-storage/room?hl=ja#kotlin
-//データの永続化に使う
