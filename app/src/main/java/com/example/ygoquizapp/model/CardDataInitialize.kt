@@ -26,7 +26,7 @@ class CardDataInitialize @Inject constructor(
             cardDataDao.insert(test)
             var randomRecord = cardDataDao.selectRandomRecord()
             println(randomRecord)
-            println(cardDataDao.selectRandomRecordsByType(randomRecord.type))
+//            println(cardDataDao.selectRandomRecordsByType(randomRecord.type))
             println(cardDataDao.getCount())
         }
     }

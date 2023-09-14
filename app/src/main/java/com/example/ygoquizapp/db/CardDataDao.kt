@@ -14,8 +14,8 @@ interface CardDataDao {
     @Query("SELECT * FROM card_data ORDER BY RANDOM() LIMIT 1")
     suspend fun selectRandomRecord(): CardDataEntity
 
-    @Query("SELECT * FROM card_data WHERE type = :type ORDER BY RANDOM() LIMIT 3")
-    suspend fun selectRandomRecordsByType(type: String?): List<CardDataEntity>
+    @Query("SELECT * FROM card_data WHERE type = :type and name != :name ORDER BY RANDOM() LIMIT 3")
+    suspend fun selectRandomRecordsByType(type: String, name: String): List<CardDataEntity>
 
     //test
     @Query("delete FROM card_data")
